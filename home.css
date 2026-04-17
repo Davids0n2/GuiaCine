@@ -1,0 +1,43 @@
+
+
+:root{
+    --cor-fundo-site: #09090b;
+    --cor-destaque : #f8c630; 
+    --cor-genero-filme: #332442;
+    --cor-sobre-texto: #778792;
+    --cor-fundo-filme: #131316;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--cor-fundo-site);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destaque{
+    color: var(--cor-destaque);
+}
+
+
+.filmes-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filme{
+    background-color: var(--cor-fundo-filme);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    width: 200px;
+    height: 350px;
+    text-align: center;
+}
