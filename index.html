@@ -14,62 +14,26 @@
 
     <main>
     <article>
-        <ul class="GuiaCine">
-        <li><img src="" alt="" /></li>
-        <li>
-            <h1>Guia<span class="destaque">Cine</span></h1>
-        </li>
-        </ul>
-        <!--Inicio da Trilogia de filmes-->
-        <section class="trilogia">
-        <div class="trilogia-container">
-        </div>
-
-        </section>
-
+        <p class="destaque"> &diams; descubra o melhor do cinema &diams;</p>
+            <h1> O Universo dos <span class="destaque">Filmes</span></h1>
+            <p class="subTexto">O melhor lugar para descobrir quais são os melhores filmes do momento!</p>
+        
         <!-- Inicio do Catalogo -->
-        <section class="Catalogo">
-            <div id="filmes-container" class="filmes-container">
-            </div>
-
-        </section>
+        <section class="Catalogo">  
+            <div class="filmes-container"></div>
+        </section>                                              
     </article>
     </main>
 
-<h1>Buscar Filme</h1>
-<input type="text" id="filme" placeholder="Digite o nome do filme">
-<button onclick="buscarFilme()">Buscar</button>
 
-<div id="resultado"></div>
-
-    <script>
-    async function buscarFilme() {
-    const titulo = document.getElementById("filme").value;
-    const apiKey = "fe7da511";
-    const url = `http://www.omdbapi.com/?t=${titulo}&apikey=${apiKey}&plot=short`;
-
-    const resposta = await fetch(url);
-    const dados = await resposta.json();
-
-    if (dados.Response === "True") {
-        document.getElementById("resultado").innerHTML = `
-        <h2>${dados.Title} (${dados.Year})</h2>
-        <img src="${dados.Poster}" alt="Poster do filme">
-        <p><strong>Gênero:</strong> ${dados.Genre}</p>
-        <p><strong>Diretor:</strong> ${dados.Director}</p>
-        <p><strong>Sinopse:</strong> ${dados.Plot}</p>
-        `;
-    } else {
-        document.getElementById("resultado").innerHTML = "Filme não encontrado!";
-    }
-    }
-</script>
 
     <footer>
-    <ul>
-        <li><img src="" alt="Logo" /> GuiaCine</li>
+    <ul class="footer-list">
+        <li><img class="logo" src="favicon/Logo-GuiaCine.png" alt="Logo" /></li>
+        <li>Guiacine</li>
         <li>© 2026 GuiaCine. Todos os direitos reservados.</li>
     </ul>
     </footer>
 </body>
+<script src="Us.js"></script>
 </html>
