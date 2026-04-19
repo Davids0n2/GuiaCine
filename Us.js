@@ -1,12 +1,12 @@
 const apikey =  "fe7da511"
 const filmesEN = [ 
     "interstellar", "Avengers", "Harry Potter", 
-    "Pirates of the Caribbean", "Star Wars", "The Lord of the Rings" , "tron" , "tron legacy","noah"
+    "Pirates of the Caribbean", "Star Wars", "The Lord of the Rings" , "tron" , "tron legacy","noah", "The Assassination of Jesse James by the Coward Robert Ford"
 ]
 
 // Titulos dos filmes em português
 const filmesPT = [
-    "Interestelar", "Vingadores", "Harry Potter", "Piratas do Caribe", "Guerra nas Estrelas" , "O Senhor dos Anéis" , "Tron" , "Tron: O Legado"
+    "Interestelar", "Vingadores", "Harry Potter", "Piratas do Caribe", "Guerra nas Estrelas" , "O Senhor dos Anéis" , "Tron" , "Tron: O Legado", "Noé", "O Assassinato de Jesse James pelo Covarde Robert Ford"
 ]
 
 
@@ -27,7 +27,7 @@ async function CatalagoFilmes() {
                     <img class="poster" src="${dados.Poster}" alt="Poster do filme ${dados.Title}">
                     <p id="genero">${dados.Genre}</p>
                     <h2>${filmesPT[i]}</h2>
-                    <p>${dados.Runtime}</p>
+                    <p>&#x23F2; ${dados.Runtime}</p>
                 </div>
             </div>    
             `

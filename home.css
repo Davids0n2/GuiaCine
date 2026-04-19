@@ -4,7 +4,7 @@
     --cor-fundo-site: #09090b;
     --cor-destaque : #f8c630; 
     --cor-genero-filme: #332442;
-    --cor-sobre-texto: #778792;
+    --cor-sobre-texto: #a9a9a9;
     --cor-fundo-filme: #16161a;
 }
 
@@ -21,8 +21,75 @@ body{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     border: 1px solid #fff;
-    padding: 20px;
 }
+
+
+
+
+
+nav{
+    background-color: rgba(26, 26, 26, 0.658);
+    padding: 0px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nome-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nome-logo p{
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.text-header{
+    text-align: center;
+    padding:30px 0px 150px 0px  ;
+}
+
+.text-header h1{
+    font-size: 66px;
+}
+
+.text-header p{
+    font-size: 14px;
+    color: var(--cor-sobre-texto);
+    margin: 20px 0px;
+}
+
+.text-header button{
+    background-color: var(--cor-destaque);
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+
+.article-text{
+    margin: 10px;
+}
+
 
 .subTexto{
     font-size: 18px;
@@ -36,22 +103,29 @@ body{
 
 .fcontainer{
     display: flex;
-    gap: 5px;
+    gap: 2px;
+    align-items: center;
+    justify-content: space-around;
+
     flex-wrap: wrap;
 }
 
 .filme{
-    flex: 1;
+    flex: 1 1 300px;
     background-color: var(--cor-fundo-filme);
     border-radius: 5px;
     border: 1px solid var(--cor-sobre-texto);
     max-width: 302px;
     height: 500px;
+    overflow: hidden;
 }
 
 .filme h2{
-    font-size: 18px;
+    font-size: 20px;
     margin: 5px ;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #genero{
@@ -61,11 +135,13 @@ body{
     padding: 5px;
     border-radius: 8px;
     margin: 5px;
+    color: #fff;
 }
 
 .filme p{
-    font-size: 10px;
-    margin: 5px 0;
+    color: var(--cor-sobre-texto);
+    font-size: 12px;
+    margin: 5px;
 }
 
 .poster{
@@ -82,12 +158,10 @@ body{
     align-items: center;
 }
 
-footer > ul > li{
-    border: 1px solid #fff;
+footer  li{
     list-style: none;
 }
 
 .logo{
-        width: 60px;
-        border: 1px solid #fff;    
-    }
+    width: 65px;
+}
