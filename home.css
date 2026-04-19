@@ -1,7 +1,7 @@
 
 
 :root{
-    --cor-fundo-site: #09090b;
+    --cor-fundo-site: rgb(9, 9, 11);
     --cor-destaque : #f8c630; 
     --cor-genero-filme: #332442;
     --cor-sobre-texto: #a9a9a9;
@@ -23,13 +23,9 @@ body{
     border: 1px solid #fff;
 }
 
-
-
-
-
 nav{
-    background-color: rgba(26, 26, 26, 0.658);
-    padding: 0px 10px ;
+    background-color: rgba(12, 12, 12, 0.658);
+    padding: 20px 20px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,17 +56,29 @@ nav{
     font-size: 16px;
 }
 
+
+header{
+    background: 
+    linear-gradient(to bottom, rgba(9, 9, 9, 0.788), rgba(0,0,0,1)),
+    url('media/Cinema.png') no-repeat top center;
+    
+}
+
+
+
+
+
 .text-header{
     text-align: center;
     padding:30px 0px 150px 0px  ;
 }
 
 .text-header h1{
-    font-size: 66px;
+    font-size: 76px;
 }
 
 .text-header p{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--cor-sobre-texto);
     margin: 20px 0px;
 }
@@ -86,8 +94,9 @@ nav{
 }
 
 
+
 .article-text{
-    margin: 10px;
+    margin: 0px 0px 30px 10px ;
 }
 
 
@@ -103,7 +112,7 @@ nav{
 
 .fcontainer{
     display: flex;
-    gap: 2px;
+    gap: 10px 2px;
     align-items: center;
     justify-content: space-around;
 
@@ -111,7 +120,6 @@ nav{
 }
 
 .filme{
-    flex: 1 1 300px;
     background-color: var(--cor-fundo-filme);
     border-radius: 5px;
     border: 1px solid var(--cor-sobre-texto);
@@ -163,5 +171,5 @@ footer  li{
 }
 
 .logo{
-    width: 65px;
+    width: 45px;
 }

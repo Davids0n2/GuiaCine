@@ -1,12 +1,27 @@
 const apikey =  "fe7da511"
 const filmesEN = [ 
-    "interstellar", "Avengers", "Harry Potter", 
-    "Pirates of the Caribbean", "Star Wars", "The Lord of the Rings" , "tron" , "tron legacy","noah", "The Assassination of Jesse James by the Coward Robert Ford"
+    "interstellar", 
+    "Avengers",
+    "Harry Potter", 
+    "Pirates of the Caribbean", 
+    "Star Wars",
+    "The Lord of the Rings" , 
+    "tron" , 
+    "tron legacy","noah" , "assassin's creed"
 ]
 
 // Titulos dos filmes em português
 const filmesPT = [
-    "Interestelar", "Vingadores", "Harry Potter", "Piratas do Caribe", "Guerra nas Estrelas" , "O Senhor dos Anéis" , "Tron" , "Tron: O Legado", "Noé", "O Assassinato de Jesse James pelo Covarde Robert Ford"
+    "Interestelar", 
+    "Vingadores",
+    "Harry Potter", 
+    "Piratas do Caribe", 
+    "Guerra nas Estrelas" , 
+    "O Senhor dos Anéis" , 
+    "Tron" , 
+    "Tron: O Legado", 
+    "Noé" , 
+    "Assassin's Creed"
 ]
 
 
