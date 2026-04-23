@@ -8,6 +8,18 @@
     --cor-fundo-filme: #16161a;
 }
 
+/* Fontes de texto*/
+@font-face {
+    font-family: "roboto";
+    src: url(Fontes/Roboto/static/Roboto_SemiCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(Fontes/Playfair/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -29,14 +41,17 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "roboto";
 }
 
 .nome-logo{
     display: flex;
     align-items: center;
+    
 }
 
 .nome-logo p{
+    font-family: "Playfair";
     font-size: 20px;
     margin-left: 10px;
     
@@ -59,7 +74,7 @@ nav{
 
 header{
     background: 
-    linear-gradient(to bottom, rgba(9, 9, 9, 0.788), rgba(0,0,0,1)),
+    linear-gradient(to bottom, rgba(9, 9, 9, 0.685), rgba(0,0,0,1)),
     url('media/Cinema.png') no-repeat top center;
     
 }
@@ -69,6 +84,7 @@ header{
 
 
 .text-header{
+    margin: 0px 0px 30px 0px;
     text-align: center;
     padding:30px 0px 150px 0px  ;
 }
@@ -88,7 +104,7 @@ header{
     color: black;
     border: none;
     padding: 10px 30px;
-    font-size: 14px;
+    font-size: 14px; 
     cursor: pointer;
     border-radius: 50px;
 }
@@ -115,7 +131,6 @@ header{
     gap: 10px 2px;
     align-items: center;
     justify-content: space-around;
-
     flex-wrap: wrap;
 }
 
@@ -159,15 +174,10 @@ header{
 }
 
 /*Footer da página*/
-
-.footer-list{
+footer{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-footer  li{
-    list-style: none;
+    justify-content: space-between;
 }
 
 .logo{
