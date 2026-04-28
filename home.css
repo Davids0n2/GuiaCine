@@ -99,15 +99,6 @@ header{
     margin: 20px 0px;
 }
 
-.text-header button{
-    background-color: var(--cor-destaque);
-    color: black;
-    border: none;
-    padding: 10px 30px;
-    font-size: 14px; 
-    cursor: pointer;
-    border-radius: 50px;
-}
 
 
 
@@ -122,13 +113,28 @@ header{
     margin-bottom: 20px;
 }
 
+.text-header button{
+    background-color: var(--cor-destaque);
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px; 
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.text-header button:hover{
+    transform: scale(1.05);
+}
+
 .destaque{
     color: var(--cor-destaque);
 }
 
 .fcontainer{
     display: flex;
-    gap: 10px 2px;
+    gap: 15px 2px;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -141,6 +147,11 @@ header{
     max-width: 302px;
     height: 500px;
     overflow: hidden;
+    transition: 0.3s;
+}
+
+.filme:hover{
+    transform: scale(1.05);
 }
 
 .filme h2{

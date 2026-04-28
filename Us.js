@@ -39,7 +39,7 @@ async function CatalagoFilmes() {
             html +=`
             <div class = "fcontainer">
                 <div class = "filme">
-                    <img class="poster" src="${dados.Poster}" alt="Poster do filme ${dados.Title}">
+                    <img class="poster" src="${dados.Poster}" alt="Poster do filme ${dados.Title}" loading="lazy" >
                     <p id="genero">${dados.Genre}</p>
                     <h2>${filmesPT[i]}</h2>
                     <p>&#x23F2; ${dados.Runtime}</p>
